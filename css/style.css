@@ -1,99 +1,203 @@
-.content {
-    position: relative;
-    z-index: 3;
+* {
+    font-family: 'Be Vietnam', sans-serif;
+}
+h1  {
+    font-family: 'Amatic SC', cursive;
+    font-size: 120px;
+    color: aliceblue;
+}
+.but1, .but2 {
+   width: 30rem;
+   font-size: 20px;
+   
+}
+h2{
+    font-size: 40px;
+}
+h2 {
+    color:aliceblue;
+}
+#challen {
+    font-size: 110px;
+}
+.container {
+    text-align: center;
+    padding: 70px;
 }
 
-#no {
-    position: absolute;
-    display: inline-block;
-    left: 35%;
-    top: 40vh;
-    -webkit-transition: all 0.1s ease-out;
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  .button>button {
+    transition-duration: 0.4s;
+    height: 3rem;
+    background-color: #23a6d5;
+    border-radius: 10px ;
+    color: aliceblue;
+    font-size: 30px;
+  }
+  
+  .button>button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .btn {
+    transition-duration: 0.4s;
+    height: 3rem;
+    width: 35rem;
+    background-color: #23a6d5;
+    border-radius: 10px ;
+    display: none;
+    color: aliceblue;
+    font-size: 30px;
+  }
+  .btn2 {
+    transition-duration: 0.4s;
+    background-color: #23a6d5;
+    border-radius: 10px ;
+    display: none;
+    float: right;
+    margin-right: 15px;
+    color: aliceblue;
+    font-size: 30px;
+    height: 3rem;
+    width: 35rem;
+  }
+  .btn:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .formcss {
+      display: none;
+      text-align: center;
+      padding: 70px;
+  }
+  .final {
+      display: none;
+      text-align: center;
+      padding: 70px;
+  }
+  .final>h1 {
+      font-size: 160px;
+  }
+  .inputf {
+      border-radius: 10px;
+      height: 6rem;
+      width: 35rem;
+      font-size: 40px;
+  }
+  .rea {
+      border-radius: 10px;
+      height: 5rem;
+      width: 12rem;
+      background-color: aquamarine;
+      color: black;
+      font-size: 30px;
+  }
+  .rea:hover {
+      background-color: #4CAF50;
+      color: white;
+  }
+.fbtn {
+    transition-duration: 0.4s;
+    background-color: #23a6d5;
+    border-radius: 10px ;
+    color: aliceblue;
+    font-size: 30px;
 }
-
-#yes {
-    position: absolute;
-    display: inline-block;
-    left: 70%;
-    top: 40vh;
-    -webkit-transition: all 0.3s ease-out;
+.fbtn:hover {
+    background-color: #4CAF50;
+    color: white;
 }
-
-#bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .8;
-    /* height: 100vh; */
-    z-index: 0;
-    background-repeat: no-repeat;
-    background-image: url(../img/bg.webp);
-    background-size: cover;
-    background-position: 50%;
-    -webkit-filter: blur(4px);
+.fbtnh1 {
+    transition-duration: 0.4s;
+    background-color: #23a6d5;
+    border-radius: 10px ;
+    color: aliceblue;
+    font-size: 30px;
+    float:left;
 }
-
-.swal2-image {
-    object-fit: contain;
+.fbtnh1:hover {
+    background-color: #4CAF50;
+    color: white;
 }
-
-.swal2-title,
-.swal2-content {
-    color: azure !important;
+.fbtnh2 {
+    transition-duration: 0.4s;
+    background-color: #23a6d5;
+    border-radius: 10px ;
+    color: aliceblue;
+    font-size: 30px;
+    float: right;
 }
-
-.swal2-popup {
-    border-radius: 15px !important;
+.fbtnh2:hover {
+    background-color: #4CAF50;
+    color: white;
 }
-
-header h2 {
-    font-family: 'Pacifico';
+.final h2 {
     font-size: 80px;
-    text-align: center;
-    margin-bottom: 30px;
-    color: cyan;
+}
+#h2h2 {
+    font-size: 27px
+}
+#heart {
+    font-size: 100px;
+}
+#h22 {
+    font-size: 40px;
 }
 
-header h4 {
-    font-family: 'Pacifico';
-    text-align: center;
-    color: chartreuse;
-}
-
-@media only screen and (max-width: 500px) {
-    header h2 {
-        font-family: 'sans-serif';
-        font-size: 45px;
-        text-align: center;
-        margin-bottom: 30px;
+@media screen and (max-width: 550px) {
+    .container {
+        padding: 10px;
     }
-    header h4 {
-        font-family: 'Pacifico';
-        text-align: center;
+    .but1, .but2 {
+        width: 18rem;
+        
+    }
+    h1 {
+        font-size: 85px
+    }
+    .btn {
+        width: 18rem;
+    }
+    .btn2 {
+        width: 18rem;
+    }
+    .formcss {
         padding: 15px;
     }
-    #no {
-        position: absolute;
-        display: inline-block;
-        left: 7%;
-        top: 40vh;
-        font-size: 14px;
-        padding: 3px;
-        -webkit-transition: all 0.1s ease-out;
+    #challen {
+        font-size: 60px;
     }
-    #yes {
-        position: absolute;
-        display: inline-block;
-        left: 58%;
-        top: 40vh;
-        font-size: 14px;
-        padding: 3px;
-        -webkit-transition: all 0.3s ease-out;
+    .final h1 {
+        font-size: 60px;
     }
-}
-
-.swal2-backdrop-show {
-    background-size: 200px 100px !important;
+    .final h2 {
+        font-size: 30px;
+    }
+    #h2h2 {
+        font-size: 25px;
+    }
+    #h22 {
+        font-size: 32px;
+    }
 }
